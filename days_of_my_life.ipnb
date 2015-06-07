@@ -1,0 +1,105 @@
+{
+ "metadata": {
+  "name": "",
+  "signature": "sha256:f2de688b2ff1f2aae097b3173a5fb7b62a16707ab1c1a46796c74dfa78b9e026"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "raw",
+     "metadata": {},
+     "source": [
+      "\u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u044c \u0434\u0435\u043d\u044c \u0441\u0435\u0433\u043e\u0434\u043d\u044f\n",
+      "\n",
+      "\u0432\u044b\u0447\u0435\u0441\u0442\u044c \u0441\u0435\u0433\u043e\u0434\u043d\u044f\u0448\u043d\u044e\u044e \u0434\u0430\u0442\u0443 \u0438\u0437 \u0434\u0430\u0442\u044b \u043c\u043e\u0435\u0433\u043e \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f\n",
+      "\n",
+      "\u0440\u0430\u0437\u043d\u0438\u0446\u0443 \u0432\u044b\u0432\u0435\u0441\u0442\u0438 \u0432 \u0434\u043d\u044f\u0445"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "https://docs.python.org/3/library/datetime.html\n"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "https://ascending.wordpress.com/2008/04/03/python-trick-subtracting-dates/\n",
+      "\n",
+      "Python Trick: Subtracting Dates\n",
+      "I\u2019m not the Python genius I want to be, so here\u2019s this, for future reference:\n",
+      "\n",
+      "How to subtract one date from another, and get the result in days:\n",
+      "\n",
+      "from datetime import date\n",
+      "(date(2008, 3, 31) - date(2005, 2, 1)).days\n",
+      "A simple application:\n",
+      "\n",
+      "party = date(2008, 6, 1)\n",
+      "(party -  date.today()).days"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from datetime import date\n",
+      "(date(2015, 2, 15) - date(1982, 2, 2)).days"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 15,
+       "text": [
+        "12066"
+       ]
+      }
+     ],
+     "prompt_number": 15
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\u043f\u0440\u0438\u0432\u044f\u0437\u044b\u0432\u0430\u0435\u043c \u043a \u0434\u0430\u0442\u0435 \u0432 \u043a\u043e\u043c\u043f\u0435"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#from datetime import date\n",
+      "from datetime import date\n",
+      "bday = date(1982, 2, 2)\n",
+      "today = date.today()\n",
+      "d = today - bday\n",
+      "d.days\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 1,
+       "text": [
+        "12178"
+       ]
+      }
+     ],
+     "prompt_number": 1
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
